@@ -1,0 +1,62 @@
+.weather-widget {
+	margin: 20px auto 20px auto;
+	width: 500px;
+	height: 400px;
+	background: green;
+	position: relative;
+}
+
+.sunny {
+	background: url("backgound_images/sunny.jpg") center / contain;
+}
+
+.cloudy {
+	background: url("backgound_images/cloudy.jpg") center / contain;
+}
+
+.rain {
+	background: url("backgound_images/rain.jpg") center / contain;
+}
+
+.snow {
+	background: url("backgound_images/snow.jpg") center / contain;
+}
+
+.weather-widget div,
+h2 {
+	color: white;
+}
+
+.weather-widget .title {
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+.weather-widget .city-input {
+	margin-left: 20px;
+	background: transparent;
+	border: solid black 1px;
+	color: white;
+}
+
+.weather-widget div {
+	display: inline-block;
+}
+
+.weather-data {
+	margin-top: 40px;
+	height: 80%;
+	width: 100%;
+	display: flex;
+}
+
+.weather-data div {
+	font-size: 1.5rem;
+	width: calc(50% - 5px);
+	height: 30%;
+	padding-left: 20px;
+}
+
+.weather-data .city {
+	width: 100%;
+}

@@ -1,0 +1,198 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	background-color: #e0f3f0;
+	margin: 0;
+}
+
+.main {
+	margin: 5%;
+}
+
+/* Site header */
+.site-header {
+	background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
+	padding: 15px;
+	color: white;
+	box-shadow: 2px 2px 4px;
+	transition: box-shadow .4s ease;
+}
+.site-title {
+}
+.site-description {
+}
+.site-menu {
+}
+.site-menu ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.site-menu li {
+}
+.site-menu a {
+	padding: 5px;
+}
+.site-menu a:hover {
+	color: #13efa7;
+}
+
+button:hover {
+	box-shadow: 5px 5px 8px;
+	background-color: #009e6c;
+	cursor: pointer;
+}
+
+/* Products */
+.products {
+	background-color: #d3fff9;
+	padding: 15px;
+}
+.products-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.products-list.show-with-nfc .product:not(.with-nfc) {
+	display: none;
+}
+.products-list.hide-with-nfc .product.with-nfc {
+	display: none;
+}
+.products-list.show-with-jack .product:not(.with-jack) {
+	display: none;
+}
+.products-list.hide-with-jack .product.with-jack {
+	display: none;
+}
+.products-list.show-with-infrared .product:not(.with-infrared) {
+	display: none;
+}
+.products-list.hide-with-infrared .product.with-infrared {
+	display: none;
+}
+
+.products-title {
+	text-align: center;
+	width: 100%;
+}
+.loader {
+	display: none;
+}
+.loader.loading {
+	display: block;
+}
+.product {
+	width: calc(25% - 2 * 7px);
+	min-width: 300px;
+	margin: 7px;
+	padding: 15px;
+	background-color: #00d1b2b3;
+	box-shadow: 2px 2px 4px;
+	transition: box-shadow .4s ease;
+	position: relative;
+	border-radius: 4px;
+}
+.product:hover {
+	box-shadow: 5px 5px 8px;
+	background-color: #009e6c;
+	cursor: pointer;
+}
+
+.product .title {
+	text-align: center;
+	display: inline-block;
+}
+.product .price {
+	text-align: right;
+	font-weight: bold;
+	font-size: 1em;
+}
+.product .nfc {
+	background: url("https://cdn3.iconfinder.com/data/icons/computers-programming/512/NFC-512.png") center / contain;
+	width: 16px;
+	height: 16px;
+}
+
+.product .jack {
+	background: url("https://cdn4.iconfinder.com/data/icons/apple-interfaces/100/headphone-jack-2-2-512.png") center /
+		contain;
+	width: 16px;
+	height: 16px;
+}
+
+.product .infrared {
+	background: url("https://cdn3.iconfinder.com/data/icons/hardware-1/100/infrared-512.png") center / contain;
+	width: 16px;
+	height: 16px;
+}
+
+.product .main-icon {
+	background: url("https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_138-512.png") center / contain;
+	background-repeat: no-repeat;
+	float: left;
+	width: 85px;
+	height: 120px;
+}
+/* .products[data-currency="$"] .product .price::before {
+  content: "$";
+}
+.products[data-currency="ron"] .product .price::after {
+  content: "Lei";
+} */
+
+/* Site Footer */
+.site-footer {
+	background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
+	padding: 15px;
+	color: white;
+	box-shadow: 2px 2px 4px;
+	transition: box-shadow .4s ease;
+}
+.site-footer p {
+	margin: 0;
+	text-align: center;
+}
+
+.advice {
+	text-align: right;
+	color: #d3fff9;
+}
+
+.button {
+	background-color: #03a9f4;
+	border-color: transparent;
+	border-width: 1px;
+	color: white;
+	margin-right: .5rem;
+	margin-bottom: .5rem;
+	cursor: pointer;
+	justify-content: center;
+	padding-bottom: calc(.5em - 1px);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: calc(.5em - 1px);
+	text-align: center;
+	white-space: nowrap;
+	border-radius: 3px;
+}
+
+.icons {
+	display: flex;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.product.detail {
+	width: 90%;
+	max-width: 720px;
+	margin: auto;
+}
